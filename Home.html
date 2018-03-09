@@ -178,7 +178,7 @@
 						}
 						
 				#page-container{
-						width::1100px;
+						width:1100px;
 						margin:0 auto;
 						
 						}
@@ -201,26 +201,65 @@
 						color:#1167A8;
 						}
 						
+				#article-container{
+						border-right: 1px solid #6B6B6B;
+						padding-right:20px;
+						}
+						
 				#article-summary{
 						color: #6B6B6B;
 						width:270px;
+						float:left;
+						
 						}
 				
 				#article-summary img{
 						width:20px;
 						position:relative;
-						top:4px;
+						top:5px;
 						}
 						
-				#article-summary a{
+				#article-summary-a{
 						text-decoration:none;
 						color:#a61b1b;
+						border-left:1px solid #6B6B6B;
+						padding-left:5px;
+						margin-left:5px
 						}
 						
-				#main-article{
+				#article-summary-a:hover{
+						color:#1167A8;
+						}
 						
+				#date{
+						margin-left:2px;
+						}
+						
+				#article-container{
+						float:left;
+						width:700px;
 						}
 				
+				#main-article-image{
+						width:400px;
+						padding-left:20px;
+						}
+						
+				#article-mini{
+						border-top: 1px solid #A91717;
+						width:50px;
+						height:0px;
+						}
+						
+				.article-link{
+						color:black;
+						text-decoration:none;
+						font-size:16px;
+						}
+						
+				.article-link:hover{
+						color:#1167A8;
+						}
 			</style>			
         </head>		
     <body>
@@ -305,14 +344,25 @@
 			
 			<div class="clear"> </div>
 			<div id="page-container"> 
+			
 				<div id="main-article">	
 					<h2 style ="color:black">Technology</h2> 
-					<h3><a href="">Asda bug exposed payment details</a></h3>
-					<div id="article-summary">
-						<p>Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.</p>
-						<p><img src="img/clock.png">19 January 2016|<a href="">Technology</a></p>
+					
+					<div id="article-container">
+						<h3><a href="">Asda bug exposed payment details</a></h3>
 						
-						</div>
+							<div id="article-summary">
+								<p>Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.</p>
+								<p><img src="img/clock.png"><span id="date">19 January 2016</span><a id="article-summary-a" href="">Technology</a></p>
+								
+								<div id="article-mini"></div>
+								
+								<p><a class="article-link" href=""> Surveillance firm hit in hack attack</a></p>
+								<p><a class="article-link" href=""> eBay flaw has existed for months</a></p>
+							</div>
+							<img id="main-article-image" src="img/main-article-image.png">
+							
+					</div>
 				</div>
 			</div>
 	
